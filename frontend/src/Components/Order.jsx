@@ -1,12 +1,14 @@
 import { useState } from "react";
+import axios from "axios"
+
 const Order = () => {
 
     const [userName, setUserName] = useState("")
     const [email, setEmail] = useState("")
     const [address, setAdress] = useState("")
 
-    const send = ()=>{
-    
+    const send = async ()=>{
+       await axios.post("http://localhost:8080/rendeles",{user:userName})
     }
 
     return (
@@ -32,8 +34,8 @@ const Order = () => {
                     <span className="bar"></span>
                     <label>Szállítási cím</label>
                 </div>
-                <button onClick={send} className="submit">Rendelés leadása</button>
             </form>
+                <button onClick={send} className="submit">Rendelés leadása</button>
         </div>
     )
 }

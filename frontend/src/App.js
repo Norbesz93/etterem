@@ -4,7 +4,9 @@ import Navbar from './Components/Navbar';
 import Menu from './Components/Menu';
 import AboutUs from './Components/AboutUs';
 import Order from './Components/Order';
+
 function App() {
+  
   return (
     <div className="App">
       <Navbar/>
