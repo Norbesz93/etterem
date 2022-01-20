@@ -1,3 +1,5 @@
+import Hamburgers from "./Hamburgers"
+import Gyroses from "./Gyroses"
 const Menu = () => {
     const pizzas = [
         { name: "pizza1", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
@@ -8,64 +10,37 @@ const Menu = () => {
         { name: "pizza6", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
         { name: "pizza7", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" }
     ]
-    const gyroses = { meat: ["csirke", "bárány"], spicy: ["csípős hagymával", "csípős hagyma nélkül", "hagyma csípős nélkül", "egyik sem"] }
+    const gyroses = [
+        { type: "Gyros pita", meat: ["csirke", "bárány"], spicy: ["csípős hagymával", "csípős hagyma nélkül", "hagyma csípős nélkül", "egyik sem"], price: 1200 },
+        { type: "Gyros tál", meat: ["csirke", "bárány"], spicy: ["csípős hagymával", "csípős hagyma nélkül", "hagyma csípős nélkül", "egyik sem"], price: 1500 }
+    ]
     const hamburgers = [
         { name: "hamburger1", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1500, currency: "HUF" },
-        { name: "hamburger2", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1500, currency: "HUF" },
-        { name: "hamburger3", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1500, currency: "HUF" },
-        { name: "hamburger4", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1500, currency: "HUF" },
-        { name: "hamburger5", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1500, currency: "HUF" },
-        { name: "hamburger6", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1500, currency: "HUF" },
+        { name: "hamburger2", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1700, currency: "HUF" },
+        { name: "hamburger3", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1800, currency: "HUF" },
+        { name: "hamburger4", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1700, currency: "HUF" },
+        { name: "hamburger5", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 1900, currency: "HUF" },
+        { name: "hamburger6", meat: ["marha", "csirke", "vega"], spicy: ["csípős", "enyhén csípős", "nem csípős"], price: 2000, currency: "HUF" },
     ]
     return (
         <div className="menu">
-            <div className="gyroses">
-                <div className="gyrosPita">
-                    <h3>Gyros pita</h3>
-                    <select name="gyrosPitaMeat">
-                        {gyroses.meat.map(gyros =>
-                            <option value={gyros}>
-                                {gyros}
-                            </option>)}
-                    </select>
-                    <select name="gyrosPitaOnion">
-                        {gyroses.spicy.map(gyros =>
-                            <option value={gyros}>
-                                {gyros}
-                            </option>)}
-                    </select>
-                </div>
-                <div className="gyrosPlate">
-                    <h3>Gyros tál</h3>
-                    <select name="gyrosPitaMeat">
-                        {gyroses.meat.map(gyros =>
-                            <option value={gyros}>
-                                {gyros}
-                            </option>)}
-                    </select>
-                    <select name="gyrosPitaOnion">
-                        {gyroses.spicy.map(gyros =>
-                            <option value={gyros}>
-                                {gyros}
-                            </option>)}
-                    </select>
-                </div>
-            </div>
+            <h2>Gyrosok</h2>
+            {gyroses.map(gyros => <Gyroses gyros={gyros} />)}
+            <hr />
+            <h2>Pizzák</h2>
             <div className="pizzas">
                 {pizzas.map(pizza =>
                     <div className="pizza">
                         <h3>{pizza.name}</h3>
                         <p>{pizza.feltet}</p>
                         <p>{pizza.price} {pizza.currency}</p>
+                        <button>vásárlás</button>
                     </div>)}
             </div>
-            <div className="hamburgers">
-                {hamburgers.map(hamburger => <div className="hamburger">
-                    <h3>{hamburger.name}</h3>
-                    <select name="" id=""></select>
-                </div>
-                )}
-            </div>
+            <hr />
+            <h2>Hamburgerek</h2>
+            {hamburgers.map(hamburger => <Hamburgers hamburger={hamburger} />)}
+            <hr />
         </div>
     )
 }
