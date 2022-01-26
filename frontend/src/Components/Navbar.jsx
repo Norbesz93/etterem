@@ -1,5 +1,5 @@
 import React,  { useState, useEffect } from "react";
-
+import logo from "../Media/logo.png"
 
 
 const Navbar = ()=>{
@@ -45,12 +45,12 @@ const Navbar = ()=>{
             <div id="secondDivInNav">
                 <ul id="navList">
                     <li><a href="menu">Étlap</a></li>
-                    <li><a href="/">Rólunk</a></li>
+                    <li><a href="abousUs">Rólunk</a></li>
                     <li><a href="conatctUs">Kapcsolat</a></li>
                 </ul>
             </div>
             <div id="logoDiv">
-                <h1><a href="/">OUR LOGO</a></h1>
+                <h1><a href="/"><img src={logo} alt="logo"/></a></h1>
             </div>
         </nav>
     );
