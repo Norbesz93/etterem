@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.App{
+  height: 100vh;
+}
+
 .box {
   position: absolute;
   left: 50%;
@@ -164,6 +168,7 @@ nav {
   position: fixed;
   width: 100%;
   border: 1px solid black;
+  z-index: 3;
 }
 
 #firstDivInNav {
@@ -252,12 +257,12 @@ li a {
 /* FOOTER CSS */
 
 #footerMainDiv {
-  position: relative;
-  z-index: -3;
+  position: absolute;
+   bottom: 0;
+   width: 100%;
 }
 
 #firstDivInFooter {
-  margin-top: -9px;
   width: 100%;
   background-color: red;
   height: 30px;
@@ -290,3 +295,11 @@ li a {
   right: 20px;
   bottom: 10px;
 }
+
+/* etlap */
+
+.menu{
+  position: absolute;
+  margin-top: 80px;
+}
+

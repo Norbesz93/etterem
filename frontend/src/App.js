@@ -19,7 +19,7 @@ function App() {
         <Route path="order" element={<Order />} />
         <Route path="contactUs" element={<ContactUs />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
