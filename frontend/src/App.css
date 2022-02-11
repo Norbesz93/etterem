@@ -290,3 +290,106 @@ li a {
   right: 20px;
   bottom: 10px;
 }
+
+/* CART CSS */
+
+#cartMainDiv {
+  background-color: #f3f0f0;
+  border: 1px solid black;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cartContent {
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 700px;
+  height: 350px;
+  border: 4px solid black;
+  border-radius: 40px;
+}
+
+#customerDetails {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.customerDetailsLabels {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-right: -15px;
+}
+
+.nameTelAddress {
+  background-color: white;
+  border: 2px solid black;
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+}
+
+#commentDiv {
+  margin-top: 20px;
+  display: flex;
+}
+
+#commentFieldLabel {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+#commentField {
+  background-color: white;
+  border: 2px solid black;
+  height: 100px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+#orderBtn {
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: #c10e0e;
+  color: black;
+  width: 300px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+/* ABOUT US CSS */
+
+#aboutUsMain {
+  background-color: #f3f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#aboutUsTitle {
+  margin-top: 100px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#aboutUsContent {
+}
+
+.aboutUsSections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutUsPictures {
+  width: 300px;
+}
