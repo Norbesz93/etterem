@@ -45,8 +45,9 @@ const Navbar = ()=>{
             <div id="secondDivInNav">
                 <ul id="navList">
                     <li><a href="menu">Étlap</a></li>
-                    <li><a href="abousUs">Rólunk</a></li>
-                    <li><a href="conatctUs">Kapcsolat</a></li>
+                    <li><a href="aboutUs">Rólunk</a></li>
+                    <li><a href="contactUs">Kapcsolat</a></li>
+                    <li><a href="cart">Kosár</a></li>
                 </ul>
             </div>
             <div id="logoDiv">
