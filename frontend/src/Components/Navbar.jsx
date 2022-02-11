@@ -46,7 +46,7 @@ const Navbar = ()=>{
                 <ul id="navList">
                     <li><a href="menu">Étlap</a></li>
                     <li><a href="aboutUs">Rólunk</a></li>
-                    <li><a href="conatctUs">Kapcsolat</a></li>
+                    <li><a href="contactUs">Kapcsolat</a></li>
                     <li><a href="cart">Kosár</a></li>
                 </ul>
             </div>
