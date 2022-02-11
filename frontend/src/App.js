@@ -21,7 +21,7 @@ function App() {
         <Route path="contactUs" element={<ContactUs />} />
         <Route path="cart" element={<Cart />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
