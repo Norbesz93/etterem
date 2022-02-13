@@ -314,6 +314,14 @@ li a {
   border-radius: 40px;
 }
 
+#priceOfOrder {
+  display: flex;
+  gap: 5px;
+  margin: 15px;
+  justify-content: end;
+  align-content: flex-end;
+}
+
 #customerDetails {
   display: flex;
   align-items: baseline;
