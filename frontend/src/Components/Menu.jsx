@@ -1,5 +1,8 @@
 import Hamburgers from "./Hamburgers"
 import Gyroses from "./Gyroses"
+import burger from "../Media/Slideshow/burger.jpg"
+import gyros_tal from "../Media/Slideshow/gyros_tal.jpg"
+import pizza_in_oven from "../Media/Slideshow/pizza_in_oven.jpg"
 const Menu = () => {
     const pizzas = [
         { name: "pizza1", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
@@ -24,9 +27,16 @@ const Menu = () => {
     ]
     return (
         <div className="menu">
+            <h2 className="what">Mit ennél?</h2>
+            <div className="foods">
+                <img src={gyros_tal} alt="" className="foodPic"/>
+                <img src={burger} alt="" className="foodPic" />
+                <img src={pizza_in_oven} alt="" className="foodPic" />
+            </div>
+            <div className="gyrosok">
             <h2>Gyrosok</h2>
             {gyroses.map(gyros => <Gyroses gyros={gyros} />)}
-            <hr />
+            </div>
             <h2>Pizzák</h2>
             <div className="pizzas">
                 {pizzas.map(pizza =>
@@ -37,10 +47,10 @@ const Menu = () => {
                         <button>vásárlás</button>
                     </div>)}
             </div>
-            <hr />
-            <h2>Hamburgerek</h2>
+            <h2>Hamburgerek</h2>            
+            <div className="hamburgers">
             {hamburgers.map(hamburger => <Hamburgers hamburger={hamburger} />)}
-            <hr />
+            </div>
         </div>
     )
 }

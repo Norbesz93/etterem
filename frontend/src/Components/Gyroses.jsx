@@ -1,4 +1,5 @@
 import React,{useState} from "react"
+
 const Gyroses = ({gyros})=>{
     const [gyrosPrice, setGyrosPrice] = useState(gyros.price)
     const priceUpdate = (e)=>{
@@ -10,22 +11,23 @@ const Gyroses = ({gyros})=>{
         }
     }
 return(
-<div className="gyros">
-    <h3>{gyros.type}</h3>
-    <select onChange={priceUpdate} name="gyrosMeat">
+<div className={gyros.type}>
+    <h3 className="gyrosContent">{gyros.type}</h3>
+    <select className="gyrosContent" onChange={priceUpdate} name="gyrosMeat">
         {gyros.meat.map(meat =>
             <option value={meat}>
                 {meat}
             </option>)}
     </select>
-    <select name="gyrosOnion">
+    <br />
+    <select className="gyrosContent" name="gyrosOnion">
         {gyros.spicy.map(spicy =>
             <option value={spicy}>
                 {spicy}
             </option>)}
     </select>
-    <p>{gyrosPrice}</p>
-    <button>vásárlás</button>
+    <p className="gyrosContent">{gyrosPrice}</p>
+    <button className="gyrosContent">vásárlás</button>
 </div>
 )}
 
