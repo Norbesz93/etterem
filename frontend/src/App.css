@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+/* body {
+  margin-top: 80px ;
+} */
+
 .buttons {
   margin: 30px;
   display: flex;
@@ -164,6 +168,8 @@ nav {
   position: fixed;
   width: 100%;
   border: 1px solid black;
+  z-index: 1;
+  top:0;
 }
 
 #firstDivInNav {
@@ -253,7 +259,8 @@ li a {
 
 #footerMainDiv {
   position: relative;
-  z-index: -3;
+  z-index: 2;
+  bottom: 0;
 }
 
 #firstDivInFooter {
@@ -289,6 +296,17 @@ li a {
   position: absolute;
   right: 20px;
   bottom: 10px;
+}
+
+
+/* etlap */
+
+.menu{
+  position: relative;
+}
+
+.menu::before{
+  border-top: 80px solid #fff;
 }
 
 /* CART CSS */
@@ -388,9 +406,6 @@ li a {
   font-size: 40px;
   text-decoration: underline;
   text-align: center;
-}
-
-#aboutUsContent {
 }
 
 .aboutUsSections {
@@ -506,3 +521,88 @@ li a {
   border-radius: 40px;
   padding: 20px;
 }
+
+
+.what{
+  margin-top: 90px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.foods{
+  display: flex;
+  height: 300px;
+  justify-content: center;
+
+}
+
+.foodPic{
+  height: 200px;
+  margin: 50px;
+  width: 250px;
+  border-radius: 40%;
+  cursor: pointer;
+}
+
+.foodPic:hover{
+  height: 250px;
+  width: 300px;
+}
+
+.gyrosok h2{
+  text-align: center;
+}
+
+.gyrosok{
+  margin-top: 75px;
+  position: relative;
+  height: 620px;
+}
+
+.Gyros{
+  border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  border-radius: 10%;
+  padding-top: 18px;
+}
+
+.Gyros button{
+  cursor: pointer;
+}
+
+.Gyros button:hover{
+  background-color: green;
+}
+
+.gyrosContent{
+  margin: 5px;
+}
+
+.pita{
+  position: absolute;
+  text-align: center;
+  right: 100px;
+}
+
+.tál{
+  position: absolute;
+  text-align: center;
+  left: 100px;
+  top:400px;
+}
+
+.hamburger{
+  margin: 20px;
+}
+
+.menu h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hamburgers{
+  display: flex;
+
+}
+
