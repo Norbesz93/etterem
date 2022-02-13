@@ -2,8 +2,10 @@ const Cart = ()=>{
     return(
         <div id="cartMainDiv">
             <div id="cartContent">
-                <p id="priceOfOrder">Végösszeg:</p>
-                <p>ÖSSZEG</p>
+                <div id="priceOfOrder">
+                    <p>Végösszeg:</p>
+                    <p>ÖSSZEG</p>
+                </div>
             </div>
             <div id="customerDetails">
                 <p for="nameField" className="customerDetailsLabels">Név:</p>
