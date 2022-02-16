@@ -169,7 +169,7 @@ nav {
   width: 100%;
   border: 1px solid black;
   z-index: 1;
-  top:0;
+  top: 0;
 }
 
 #firstDivInNav {
@@ -298,14 +298,13 @@ li a {
   bottom: 10px;
 }
 
-
 /* etlap */
 
-.menu{
+.menu {
   position: relative;
 }
 
-.menu::before{
+.menu::before {
   border-top: 80px solid #fff;
 }
 
@@ -522,21 +521,19 @@ li a {
   padding: 20px;
 }
 
-
-.what{
+.what {
   margin-top: 90px;
   font-size: 40px;
   text-align: center;
 }
 
-.foods{
+.foods {
   display: flex;
   height: 300px;
   justify-content: center;
-
 }
 
-.foodPic{
+.foodPic {
   height: 200px;
   margin: 50px;
   width: 250px;
@@ -544,22 +541,22 @@ li a {
   cursor: pointer;
 }
 
-.foodPic:hover{
+.foodPic:hover {
   height: 250px;
   width: 300px;
 }
 
-.gyrosok h2{
+.gyrosok h2 {
   text-align: center;
 }
 
-.gyrosok{
+.gyrosok {
   margin-top: 75px;
   position: relative;
   height: 620px;
 }
 
-.Gyros{
+.Gyros {
   border: 1px solid black;
   width: 500px;
   height: 200px;
@@ -567,42 +564,40 @@ li a {
   padding-top: 18px;
 }
 
-.Gyros button{
+.Gyros button {
   cursor: pointer;
 }
 
-.Gyros button:hover{
+.Gyros button:hover {
   background-color: green;
 }
 
-.gyrosContent{
+.gyrosContent {
   margin: 5px;
 }
 
-.pita{
+.pita {
   position: absolute;
   text-align: center;
   right: 100px;
 }
 
-.tál{
+.tál {
   position: absolute;
   text-align: center;
   left: 100px;
-  top:400px;
+  top: 400px;
 }
 
-.hamburger{
+.hamburger {
   margin: 20px;
 }
 
-.menu h2{
+.menu h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.hamburgers{
+.hamburgers {
   display: flex;
-
 }
-

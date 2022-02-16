@@ -6,6 +6,7 @@ const Navbar = ()=>{
     
     const [isOpen, setIsOpen] = useState("Open")
     const [canOrder, setCanOrder] = useState("")
+    const [isShrunk, setShrunk] = useState(false);
 
     const date = new Date()
 
@@ -34,11 +35,37 @@ const Navbar = ()=>{
 
     useEffect(() => {
         areWeOpen();
+
+        const handler = () => {
+            setShrunk((isShrunk) => {
+                if (
+                  !isShrunk &&
+                  (document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20)
+                ) {
+                  return true;
+                }
+        
+                if (
+                  isShrunk &&
+                  document.body.scrollTop < 4 &&
+                  document.documentElement.scrollTop < 4
+                ) {
+                  return false;
+                }
+        
+                return isShrunk;
+              });
+          };
+      
+        window.addEventListener("scroll", handler);
+        return () => window.removeEventListener("scroll", handler);
+    
     }, []);
     
     return(        
         <nav>
-            <div id="firstDivInNav">
+            <div id="firstDivInNav" style={isShrunk ? {display: "none"}: {display: "block" }}>
                 <p className="dateTimeField">{date.toLocaleDateString("hu-HU")}</p>
                 <h3 className="isOpen">{isOpen} - {canOrder}</h3>
             </div>
@@ -50,7 +77,7 @@ const Navbar = ()=>{
                     <li><a href="cart">Kosár</a></li>
                 </ul>
             </div>
-            <div id="logoDiv">
+            <div id="logoDiv" style={isShrunk ? {display: "none"}: {display: "block" }}>
                 <h1><a href="/"><img src={logo} alt="logo"/></a></h1>
             </div>
         </nav>
