@@ -65,7 +65,7 @@ const Navbar = ()=>{
     
     return(        
         <nav>
-            <div id="firstDivInNav" style={isShrunk ? {display: "none"}: {display: "block" }}>
+            <div id="firstDivInNav" style={isShrunk ? {display: "none"}: {display: "flex" }}>
                 <p className="dateTimeField">{date.toLocaleDateString("hu-HU")}</p>
                 <h3 className="isOpen">{isOpen} - {canOrder}</h3>
             </div>
