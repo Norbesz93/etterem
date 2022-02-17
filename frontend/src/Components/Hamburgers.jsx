@@ -24,8 +24,8 @@ const Hamburgers = ({hamburger}) =>{
                     {spicy}
                 </option>)}
         </select>
-        <p>{hamburgerPrice}</p>
-            <button>vásárlás</button>    
+        <p>{hamburgerPrice} <button>vásárlás</button></p>
+                
     </div>
 )}
 

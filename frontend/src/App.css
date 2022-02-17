@@ -303,11 +303,13 @@ li a {
 
 .menu{
   position: relative;
+  background-image: url('C:\Users\Norbert\Desktop\Ricsi\etterem\frontend\src\Media\bacgroundmenu.jpg');
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
-.menu::before{
-  border-top: 80px solid #fff;
-}
 
 /* CART CSS */
 
@@ -524,9 +526,10 @@ li a {
 
 
 .what{
-  margin-top: 90px;
+  margin-top: 72px;
   font-size: 40px;
   text-align: center;
+  padding: 20px;
 }
 
 .foods{
@@ -560,7 +563,7 @@ li a {
 }
 
 .Gyros{
-  border: 1px solid black;
+  border: 1px solid white;
   width: 500px;
   height: 200px;
   border-radius: 10%;
@@ -592,17 +595,64 @@ li a {
   top:400px;
 }
 
-.hamburger{
+.pizzas{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.pizza{
   margin: 20px;
+  border: 1px solid wheat;
+  border-radius: 10%;
+  height: 150px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pizza p{
+  padding: 5px;
+}
+
+.pizza button{
+  height: 25px;
+  width: 120px;
+  text-align: center;
+}
+
+.hamburger{
+  height: 150px;
+  margin: 20px;
+  flex-basis: 30%;
+  border: 1px solid ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu h2{
   text-align: center;
-  margin-bottom: 20px;
+
 }
 
 .hamburgers{
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.hamburger h3{
+  width: 150px;
+}
+
+.hamburger select{
+  width: 150px;
+  text-align: center;
+  background-color: lightgreen;
+  border-radius: 10px;
+}

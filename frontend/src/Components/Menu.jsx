@@ -3,13 +3,15 @@ import Gyroses from "./Gyroses"
 import burger from "../Media/Slideshow/burger.jpg"
 import gyros_tal from "../Media/Slideshow/gyros_tal.jpg"
 import pizza_in_oven from "../Media/Slideshow/pizza_in_oven.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'  
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 const Menu = () => {
     const pizzas = [
         { name: "pizza1", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
         { name: "pizza2", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
         { name: "pizza3", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
         { name: "pizza4", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
-        { name: "pizza5", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
+        { name: "pizza5", feltet: "sonka,gomba,ez,az,amaz,sajt,stfgdxfgdb,stb sadasd", price: 1500, currency: "HUF" },
         { name: "pizza6", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" },
         { name: "pizza7", feltet: "sonka,gomba,ez,az,amaz,sajt,stb,stb", price: 1500, currency: "HUF" }
     ]
@@ -42,9 +44,9 @@ const Menu = () => {
                 {pizzas.map(pizza =>
                     <div className="pizza">
                         <h3>{pizza.name}</h3>
-                        <p>{pizza.feltet}</p>
+                        <p>{pizza.feltet }</p>
                         <p>{pizza.price} {pizza.currency}</p>
-                        <button>vásárlás</button>
+                        <button>Megrendelem <FontAwesomeIcon icon={faCartShopping}/></button>
                     </div>)}
             </div>
             <h2>Hamburgerek</h2>            
