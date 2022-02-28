@@ -1,8 +1,10 @@
-const Cart = ()=>{
+const Cart = ({ordered})=>{
+    console.log(ordered)
     return(
         <div id="cartMainDiv">
             <div id="cartContent">
                 <div id="priceOfOrder">
+                    <p>{}</p>
                     <p>Végösszeg:</p>
                     <p>ÖSSZEG</p>
                 </div>

@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-const Hamburgers = ({hamburger}) =>{
+const Hamburgers = ({hamburger, foodToCart}) =>{
     const [hamburgerPrice, setHamburgerPrice] = useState(hamburger.price)
     const priceUpdate = (e)=>{
         let price = hamburger.price
@@ -24,7 +24,7 @@ const Hamburgers = ({hamburger}) =>{
                     {spicy}
                 </option>)}
         </select>
-        <p>{hamburgerPrice} <button>vásárlás</button></p>
+        <p>{hamburgerPrice} <button onClick={()=>foodToCart(hamburger)}>vásárlás</button></p>
                 
     </div>
 )}
