@@ -601,19 +601,21 @@ ul li a:hover {
 
 /* ETLAP CSS */
 
-.what {
-  margin-top: 90px;
+.what{
+  margin-top: 72px;
   font-size: 40px;
   text-align: center;
+  padding: 20px;
 }
 
-.foods {
+.foods{
   display: flex;
   height: 300px;
   justify-content: center;
+
 }
 
-.foodPic {
+.foodPic{
   height: 200px;
   margin: 50px;
   width: 250px;
@@ -621,63 +623,112 @@ ul li a:hover {
   cursor: pointer;
 }
 
-.foodPic:hover {
+.foodPic:hover{
   height: 250px;
   width: 300px;
 }
 
-.gyrosok h2 {
+.gyrosok h2{
   text-align: center;
 }
 
-.gyrosok {
+.gyrosok{
   margin-top: 75px;
   position: relative;
   height: 620px;
 }
 
-.Gyros {
-  border: 1px solid black;
+.Gyros{
+  border: 1px solid white;
   width: 500px;
   height: 200px;
   border-radius: 10%;
   padding-top: 18px;
 }
 
-.Gyros button {
+.Gyros button{
   cursor: pointer;
 }
 
-.Gyros button:hover {
+.Gyros button:hover{
   background-color: green;
 }
 
-.gyrosContent {
+.gyrosContent{
   margin: 5px;
 }
 
-.pita {
+.pita{
   position: absolute;
   text-align: center;
   right: 100px;
 }
 
-.tál {
+.tál{
   position: absolute;
   text-align: center;
   left: 100px;
-  top: 400px;
+  top:400px;
 }
 
-.hamburger {
-  margin: 20px;
-}
-
-.menu h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.hamburgers {
+.pizzas{
   display: flex;
+  flex-wrap: wrap;
+
+}
+
+.pizza{
+  margin: 20px;
+  border: 1px solid wheat;
+  border-radius: 10%;
+  height: 150px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pizza p{
+  padding: 5px;
+}
+
+.pizza button{
+  height: 25px;
+  width: 120px;
+  text-align: center;
+}
+
+.hamburger{
+  height: 150px;
+  margin: 20px;
+  flex-basis: 30%;
+  border: 1px solid ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu h2{
+  text-align: center;
+
+}
+
+.hamburgers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hamburger h3{
+  width: 150px;
+}
+
+.hamburger select{
+  width: 150px;
+  text-align: center;
+  background-color: lightgreen;
+  border-radius: 10px;
 }
