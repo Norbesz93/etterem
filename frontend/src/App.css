@@ -356,10 +356,11 @@ ul li a:hover {
 
 .menu {
   position: relative;
-}
-
-.menu::before {
-  border-top: 80px solid #fff;
+  background-image: url('C:\Users\Norbert\Desktop\Ricsi\etterem\frontend\src\Media\bacgroundmenu.jpg');
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 /* CART CSS */
@@ -638,6 +639,7 @@ ul li a:hover {
   height: 620px;
 }
 
+
 .Gyros{
   border: 1px solid white;
   width: 500px;
@@ -671,6 +673,7 @@ ul li a:hover {
   top:400px;
 }
 
+
 .pizzas{
   display: flex;
   flex-wrap: wrap;
@@ -691,6 +694,24 @@ ul li a:hover {
 
 .pizza p{
   padding: 5px;
+}
+
+.pizza button{
+  height: 25px;
+  width: 120px;
+  text-align: center;
+}
+
+.hamburger {
+  margin: 20px;
+  flex-basis: 30%;
+  border: 1px solid ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
 }
 
 .pizza button{
