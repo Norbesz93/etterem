@@ -640,7 +640,8 @@ ul li a:hover {
 }
 
 
-.Gyros {
+
+.Gyros{
   border: 1px solid white;
   width: 500px;
   height: 200px;
@@ -713,6 +714,25 @@ ul li a:hover {
   align-items: center;
   justify-content: space-between;
   height: 150px;
+
+}
+
+.pizza button{
+  height: 25px;
+  width: 120px;
+  text-align: center;
+}
+
+.hamburger{
+  height: 150px;
+  margin: 20px;
+  flex-basis: 30%;
+  border: 1px solid ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu h2{
