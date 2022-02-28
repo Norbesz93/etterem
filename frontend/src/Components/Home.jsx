@@ -1,6 +1,5 @@
 import pizzaOne from "../Media/pizza_1.jpg"
-import {Link } from "react-router-dom"
-import Menu from "./Menu";
+
 
 
 const Home = ()=>{
@@ -8,8 +7,8 @@ const Home = ()=>{
         
         <div>
             <div id="homeBackground">
-                <img  id="pizzaImg" src={pizzaOne} alt="pizza"/>
-                <Link id="goToMenu" to={<Menu/>}>Tovább az étlapra</Link>
+                <img  id="pizzaImg" src={pizzaOne} alt="pizza"></img>
+                <a id="goToMenu" href="menu">Tovább az étlapra</a>
             </div>
         </div>
     )
