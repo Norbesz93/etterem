@@ -1,10 +1,8 @@
 const Cart = ({ordered})=>{
-    console.log(ordered)
     return(
         <div id="cartMainDiv">
             <div id="cartContent">
                 <div id="priceOfOrder">
-                    <p>{}</p>
                     <p>Végösszeg:</p>
                     <p>ÖSSZEG</p>
                 </div>
@@ -21,7 +19,7 @@ const Cart = ({ordered})=>{
                 <p  id="commentFieldLabel" for="commentField">Megjegyzés:</p>
                 <input id="commentField" type="text" />
             </div>
-            <button id="orderBtn">Megrendelem</button>
+            <button id="orderBtn"onClick={()=>console.log(ordered)}>Megrendelem</button>
         </div>
     )
 }

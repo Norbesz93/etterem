@@ -1,4 +1,6 @@
 import React,{useState} from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'  
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 
 const Gyroses = ({gyros, foodToCart})=>{
     const [gyrosPrice, setGyrosPrice] = useState(gyros.price)
@@ -27,7 +29,7 @@ return(
             </option>)}
     </select>
     <p className="gyrosContent">{gyrosPrice}</p>
-    <button className="gyrosContent" onClick={()=>foodToCart(gyros)}>vásárlás</button>
+    <button className="gyrosContent" onClick={()=>foodToCart(gyros)}><FontAwesomeIcon icon={faCartShopping}/></button>
 </div>
 )}
 

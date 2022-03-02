@@ -47,7 +47,7 @@ const Menu = ({foodToCart}) => {
                         <h3>{pizza.name}</h3>
                         <p>{pizza.feltet }</p>
                         <p>{pizza.price} {pizza.currency}</p>
-                        <button onClick={()=>foodToCart(pizza)}>Megrendelem <FontAwesomeIcon icon={faCartShopping}/></button>
+                        <button onClick={()=>foodToCart(pizza)}><FontAwesomeIcon icon={faCartShopping}/></button>
                     </div>)}
             </div>
             <h2>Hamburgerek</h2>            
