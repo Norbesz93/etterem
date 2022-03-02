@@ -356,7 +356,7 @@ ul li a:hover {
 
 .menu {
   position: relative;
-  background-image: url('C:\Users\Norbert\Desktop\Ricsi\etterem\frontend\src\Media\bacgroundmenu.jpg');
+  background-image: url('./Media/bacgroundmenu.jpg');
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
