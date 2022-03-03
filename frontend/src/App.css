@@ -451,6 +451,7 @@ ul li a:hover {
   background-color: #f3f0f0;
   background-image: url('./Media/restaurant_blur_about_us_photo.svg');
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -734,7 +735,7 @@ ul li a:hover {
 .hamburger select{
   width: 150px;
   text-align: center;
-  background-color: lightgreen;
+  background-color: green;
   border-radius: 10px;
 }
 
@@ -748,5 +749,8 @@ ul li a:hover {
 }
 
 .hamburger h3{
-  width: 150px;
+  width: 200px;
+  height: 30px;
+  background-image: url('./Media/hamburgerek-teteje-cut.gif');
+  background-size: cover;
 }
