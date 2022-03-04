@@ -356,7 +356,7 @@ ul li a:hover {
 
 .menu {
   position: relative;
-  background-image: url('C:\Users\Norbert\Desktop\Ricsi\etterem\frontend\src\Media\bacgroundmenu.jpg');
+  background-image: url("./Media/bacgroundmenu.jpg");
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -602,21 +602,20 @@ ul li a:hover {
 
 /* ETLAP CSS */
 
-.what{
+.what {
   margin-top: 72px;
   font-size: 40px;
   text-align: center;
   padding: 20px;
 }
 
-.foods{
+.foods {
   display: flex;
   height: 300px;
   justify-content: center;
-
 }
 
-.foodPic{
+.foodPic {
   height: 200px;
   margin: 50px;
   width: 250px;
@@ -624,23 +623,22 @@ ul li a:hover {
   cursor: pointer;
 }
 
-.foodPic:hover{
+.foodPic:hover {
   height: 250px;
   width: 300px;
 }
 
-.gyrosok h2{
+.gyrosok h2 {
   text-align: center;
 }
 
-.gyrosok{
+.gyrosok {
   margin-top: 75px;
   position: relative;
   height: 620px;
 }
 
-
-.Gyros{
+.Gyros {
   border: 1px solid white;
   width: 500px;
   height: 200px;
@@ -648,39 +646,37 @@ ul li a:hover {
   padding-top: 18px;
 }
 
-.Gyros button{
+.Gyros button {
   cursor: pointer;
 }
 
-.Gyros button:hover{
+.Gyros button:hover {
   background-color: green;
 }
 
-.gyrosContent{
+.gyrosContent {
   margin: 5px;
 }
 
-.pita{
+.pita {
   position: absolute;
   text-align: center;
   right: 100px;
 }
 
-.tál{
+.tál {
   position: absolute;
   text-align: center;
   left: 100px;
-  top:400px;
+  top: 400px;
 }
 
-
-.pizzas{
+.pizzas {
   display: flex;
   flex-wrap: wrap;
-
 }
 
-.pizza{
+.pizza {
   margin: 20px;
   border: 1px solid wheat;
   border-radius: 10%;
@@ -692,11 +688,11 @@ ul li a:hover {
   align-items: center;
 }
 
-.pizza p{
+.pizza p {
   padding: 5px;
 }
 
-.pizza button{
+.pizza button {
   height: 25px;
   width: 120px;
   text-align: center;
@@ -705,7 +701,7 @@ ul li a:hover {
 .hamburger {
   margin: 20px;
   flex-basis: 30%;
-  border: 1px solid ;
+  border: 1px solid;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -714,17 +710,17 @@ ul li a:hover {
   height: 150px;
 }
 
-.pizza button{
+.pizza button {
   height: 25px;
   width: 120px;
   text-align: center;
 }
 
-.hamburger{
+.hamburger {
   height: 150px;
   margin: 20px;
   flex-basis: 30%;
-  border: 1px solid ;
+  border: 1px solid;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -732,22 +728,21 @@ ul li a:hover {
   justify-content: space-between;
 }
 
-.menu h2{
+.menu h2 {
   text-align: center;
-
 }
 
-.hamburgers{
+.hamburgers {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.hamburger h3{
+.hamburger h3 {
   width: 150px;
 }
 
-.hamburger select{
+.hamburger select {
   width: 150px;
   text-align: center;
   background-color: lightgreen;
