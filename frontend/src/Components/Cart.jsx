@@ -1,4 +1,4 @@
-const Cart = ()=>{
+const Cart = ({ordered})=>{
     return(
         <div id="cartMainDiv">
             <div id="cartContent">
@@ -19,7 +19,7 @@ const Cart = ()=>{
                 <p  id="commentFieldLabel" for="commentField">Megjegyzés:</p>
                 <input id="commentField" type="text" />
             </div>
-            <button id="orderBtn">Megrendelem</button>
+            <button id="orderBtn"onClick={()=>console.log(ordered)}>Megrendelem</button>
         </div>
     )
 }

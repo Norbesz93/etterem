@@ -1,5 +1,7 @@
 import React,{useState} from "react";
-const Hamburgers = ({hamburger}) =>{
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'  
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
+const Hamburgers = ({hamburger, foodToCart}) =>{
     const [hamburgerPrice, setHamburgerPrice] = useState(hamburger.price)
     const priceUpdate = (e)=>{
         let price = hamburger.price
@@ -24,7 +26,7 @@ const Hamburgers = ({hamburger}) =>{
                     {spicy}
                 </option>)}
         </select>
-        <p>{hamburgerPrice} <button>vásárlás</button></p>
+        <p>{hamburgerPrice} <button onClick={()=>foodToCart(hamburger)}><FontAwesomeIcon icon={faCartShopping}/></button></p>
                 
     </div>
 )}

@@ -356,7 +356,7 @@ ul li a:hover {
 
 .menu {
   position: relative;
-  background-image: url('C:\Users\Norbert\Desktop\Ricsi\etterem\frontend\src\Media\bacgroundmenu.jpg');
+  background-image: url('./Media/bacgroundmenu.jpg');
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -449,6 +449,9 @@ ul li a:hover {
 
 #aboutUsMain {
   background-color: #f3f0f0;
+  background-image: url('./Media/restaurant_blur_about_us_photo.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -602,8 +605,8 @@ ul li a:hover {
 
 /* ETLAP CSS */
 
-.what{
-  margin-top: 72px;
+.what {
+  margin-top: 90px;
   font-size: 40px;
   text-align: center;
   padding: 20px;
@@ -640,6 +643,7 @@ ul li a:hover {
 }
 
 
+
 .Gyros{
   border: 1px solid white;
   width: 500px;
@@ -650,9 +654,10 @@ ul li a:hover {
 
 .Gyros button{
   cursor: pointer;
-}
-
-.Gyros button:hover{
+  height: 35px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
   background-color: green;
 }
 
@@ -672,7 +677,6 @@ ul li a:hover {
   left: 100px;
   top:400px;
 }
-
 
 .pizzas{
   display: flex;
@@ -697,27 +701,12 @@ ul li a:hover {
 }
 
 .pizza button{
-  height: 25px;
-  width: 120px;
+  cursor: pointer;
+  height: 35px;
+  width: 60px;
   text-align: center;
-}
-
-.hamburger {
-  margin: 20px;
-  flex-basis: 30%;
-  border: 1px solid ;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 150px;
-}
-
-.pizza button{
-  height: 25px;
-  width: 120px;
-  text-align: center;
+  border-radius: 50%;
+  background-color: green;
 }
 
 .hamburger{
@@ -743,13 +732,25 @@ ul li a:hover {
   justify-content: center;
 }
 
-.hamburger h3{
-  width: 150px;
-}
-
 .hamburger select{
   width: 150px;
   text-align: center;
-  background-color: lightgreen;
+  background-color: green;
   border-radius: 10px;
+}
+
+.hamburger button{
+  cursor: pointer;
+  height: 35px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.hamburger h3{
+  width: 200px;
+  height: 30px;
+  background-image: url('./Media/hamburgerek-teteje-cut.gif');
+  background-size: cover;
 }
