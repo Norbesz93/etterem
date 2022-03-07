@@ -170,10 +170,10 @@ input:focus ~ .highlight {
 
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
 
-  z-index: 1;
-  top: 0;
+  z-index: 100;
 }
 
 .firstDivInNav {
@@ -184,7 +184,7 @@ nav {
   width: 100%;
   background-color: green;
   height: 40px;
-  transition: height 2s;
+  transition: height 1s;
 }
 
 .firstDivInNavScrolled {
@@ -205,13 +205,13 @@ nav {
   background-color: red;
   height: 40px;
   border-radius: 0px 0px 15px 15px;
-  transition: height 2s;
+  transition: height 1s;
 }
 
 .secondDivInNavScrolled {
   width: 100%;
   background-color: red;
-  height: 80px;
+  height: 50px;
 }
 
 #navList {
@@ -245,8 +245,14 @@ li a {
   height: 60px;
 }
 
-.logoDiv h1 a img {
+.logoDiv h1 a .imageDiv {
   height: 60px;
+  border-radius: 10px;
+  transition: height 1s;
+}
+
+.logoDiv h1 a .imageDivScrolled {
+  height: 80px;
   border-radius: 10px;
 }
 
@@ -285,7 +291,7 @@ ul li a:hover {
   height: auto;
 }
 
-#homeBackground #goToMenu {
+#goToMenu {
   position: absolute;
   text-decoration: none;
   top: 75%;
@@ -356,7 +362,7 @@ ul li a:hover {
 
 .menu {
   position: relative;
-  background-image: url('./Media/bacgroundmenu.jpg');
+  background-image: url("./Media/bacgroundmenu.jpg");
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -449,9 +455,7 @@ ul li a:hover {
 
 #aboutUsMain {
   background-color: #f3f0f0;
-  background-image: url('./Media/restaurant_blur_about_us_photo.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("./Media/restaurant_blur_about_us_photo.svg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -612,14 +616,13 @@ ul li a:hover {
   padding: 20px;
 }
 
-.foods{
+.foods {
   display: flex;
   height: 300px;
   justify-content: center;
-
 }
 
-.foodPic{
+.foodPic {
   height: 200px;
   margin: 50px;
   width: 250px;
@@ -627,24 +630,22 @@ ul li a:hover {
   cursor: pointer;
 }
 
-.foodPic:hover{
+.foodPic:hover {
   height: 250px;
   width: 300px;
 }
 
-.gyrosok h2{
+.gyrosok h2 {
   text-align: center;
 }
 
-.gyrosok{
+.gyrosok {
   margin-top: 75px;
   position: relative;
   height: 620px;
 }
 
-
-
-.Gyros{
+.Gyros {
   border: 1px solid white;
   width: 500px;
   height: 200px;
@@ -652,7 +653,7 @@ ul li a:hover {
   padding-top: 18px;
 }
 
-.Gyros button{
+.Gyros button {
   cursor: pointer;
   height: 35px;
   width: 60px;
@@ -661,30 +662,29 @@ ul li a:hover {
   background-color: green;
 }
 
-.gyrosContent{
+.gyrosContent {
   margin: 5px;
 }
 
-.pita{
+.pita {
   position: absolute;
   text-align: center;
   right: 100px;
 }
 
-.tál{
+.tál {
   position: absolute;
   text-align: center;
   left: 100px;
-  top:400px;
+  top: 400px;
 }
 
-.pizzas{
+.pizzas {
   display: flex;
   flex-wrap: wrap;
-
 }
 
-.pizza{
+.pizza {
   margin: 20px;
   border: 1px solid wheat;
   border-radius: 10%;
@@ -696,11 +696,11 @@ ul li a:hover {
   align-items: center;
 }
 
-.pizza p{
+.pizza p {
   padding: 5px;
 }
 
-.pizza button{
+.pizza button {
   cursor: pointer;
   height: 35px;
   width: 60px;
@@ -709,11 +709,11 @@ ul li a:hover {
   background-color: green;
 }
 
-.hamburger{
+.hamburger {
   height: 150px;
   margin: 20px;
   flex-basis: 30%;
-  border: 1px solid ;
+  border: 1px solid;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -721,25 +721,24 @@ ul li a:hover {
   justify-content: space-between;
 }
 
-.menu h2{
+.menu h2 {
   text-align: center;
-
 }
 
-.hamburgers{
+.hamburgers {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.hamburger select{
+.hamburger select {
   width: 150px;
   text-align: center;
   background-color: green;
   border-radius: 10px;
 }
 
-.hamburger button{
+.hamburger button {
   cursor: pointer;
   height: 35px;
   width: 60px;
@@ -748,9 +747,9 @@ ul li a:hover {
   background-color: green;
 }
 
-.hamburger h3{
+.hamburger h3 {
   width: 200px;
   height: 30px;
-  background-image: url('./Media/hamburgerek-teteje-cut.gif');
+  background-image: url("./Media/hamburgerek-teteje-cut.gif");
   background-size: cover;
 }
