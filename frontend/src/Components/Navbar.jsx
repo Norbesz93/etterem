@@ -1,6 +1,8 @@
 import React,  { useState, useEffect } from "react";
 import logo from "../Media/logo.png"
 
+import {Link} from "react-router-dom"
+
 
 const Navbar = ()=>{
     
@@ -86,14 +88,14 @@ const Navbar = ()=>{
             </div>
             <div className={isShrunk ? "secondDivInNav secondDivInNavScrolled" : "secondDivInNav"}>
                 <ul id="navList">
-                    <li><a href="menu">Étlap</a></li>
-                    <li><a href="aboutUs">Rólunk</a></li>
-                    <li><a href="contactUs">Kapcsolat</a></li>
-                    <li><a href="cart">Kosár</a></li>
+                    <li><Link to="menu">Étlap</Link></li>
+                    <li><Link to="aboutUs">Rólunk</Link></li>
+                    <li><Link to="contactUs">Kapcsolat</Link></li>
+                    <li><Link to="cart">Kosár</Link></li>
                 </ul>
             </div>
             <div className={isShrunk ? "logoDiv logoDivScrolled" : "logoDiv"}>
-                <h1><a href="/"><img src={logo} alt="logo"/></a></h1>
+                <h1><Link to="/"><img className={isShrunk ? "imageDiv imageDivScrolled" : "imageDiv"} src={logo} alt="logo"/></Link></h1>
             </div>
         </nav>
     );

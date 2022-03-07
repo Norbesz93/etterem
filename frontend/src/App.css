@@ -170,10 +170,10 @@ input:focus ~ .highlight {
 
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
 
-  z-index: 1;
-  top: 0;
+  z-index: 100;
 }
 
 .firstDivInNav {
@@ -184,7 +184,7 @@ nav {
   width: 100%;
   background-color: green;
   height: 40px;
-  transition: height 2s;
+  transition: height 1s;
 }
 
 .firstDivInNavScrolled {
@@ -205,13 +205,13 @@ nav {
   background-color: red;
   height: 40px;
   border-radius: 0px 0px 15px 15px;
-  transition: height 2s;
+  transition: height 1s;
 }
 
 .secondDivInNavScrolled {
   width: 100%;
   background-color: red;
-  height: 80px;
+  height: 50px;
 }
 
 #navList {
@@ -245,8 +245,14 @@ li a {
   height: 60px;
 }
 
-.logoDiv h1 a img {
+.logoDiv h1 a .imageDiv {
   height: 60px;
+  border-radius: 10px;
+  transition: height 1s;
+}
+
+.logoDiv h1 a .imageDivScrolled {
+  height: 80px;
   border-radius: 10px;
 }
 
@@ -285,7 +291,7 @@ ul li a:hover {
   height: auto;
 }
 
-#homeBackground #goToMenu {
+#goToMenu {
   position: absolute;
   text-decoration: none;
   top: 75%;
@@ -449,6 +455,7 @@ ul li a:hover {
 
 #aboutUsMain {
   background-color: #f3f0f0;
+  background-image: url("./Media/restaurant_blur_about_us_photo.svg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -603,7 +610,7 @@ ul li a:hover {
 /* ETLAP CSS */
 
 .what {
-  margin-top: 72px;
+  margin-top: 90px;
   font-size: 40px;
   text-align: center;
   padding: 20px;
@@ -648,9 +655,10 @@ ul li a:hover {
 
 .Gyros button {
   cursor: pointer;
-}
-
-.Gyros button:hover {
+  height: 35px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
   background-color: green;
 }
 
@@ -693,27 +701,12 @@ ul li a:hover {
 }
 
 .pizza button {
-  height: 25px;
-  width: 120px;
+  cursor: pointer;
+  height: 35px;
+  width: 60px;
   text-align: center;
-}
-
-.hamburger {
-  margin: 20px;
-  flex-basis: 30%;
-  border: 1px solid;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 150px;
-}
-
-.pizza button {
-  height: 25px;
-  width: 120px;
-  text-align: center;
+  border-radius: 50%;
+  background-color: green;
 }
 
 .hamburger {
@@ -738,13 +731,25 @@ ul li a:hover {
   justify-content: center;
 }
 
-.hamburger h3 {
-  width: 150px;
-}
-
 .hamburger select {
   width: 150px;
   text-align: center;
-  background-color: lightgreen;
+  background-color: green;
   border-radius: 10px;
+}
+
+.hamburger button {
+  cursor: pointer;
+  height: 35px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.hamburger h3 {
+  width: 200px;
+  height: 30px;
+  background-image: url("./Media/hamburgerek-teteje-cut.gif");
+  background-size: cover;
 }
