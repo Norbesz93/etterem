@@ -4,6 +4,8 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 
 const Gyroses = ({gyros, foodToCart})=>{
     const [gyrosPrice, setGyrosPrice] = useState(gyros.price)
+    const [gyrosMeat, setGyrosMeat] = useState(gyros.meat[0])
+    const [gyrosSpicy, setGyrosSpicy] = useState(gyros.spicy[0])
     const priceUpdate = (e)=>{
         let price = gyros.price
         if(e.target.value === "bárány"){
@@ -11,6 +13,7 @@ const Gyroses = ({gyros, foodToCart})=>{
         }else{
             setGyrosPrice(price)
         }
+        setGyrosMeat(e.target.value)
     }
 return(
 <div className={gyros.name}>
@@ -22,14 +25,14 @@ return(
             </option>)}
     </select>
     <br />
-    <select className="gyrosContent" name="gyrosOnion">
+    <select className="gyrosContent" name="gyrosOnion" onChange={(e)=>setGyrosSpicy(e.target.value)}>
         {gyros.spicy.map(spicy =>
             <option value={spicy}>
                 {spicy}
             </option>)}
     </select>
     <p className="gyrosContent">{gyrosPrice}</p>
-    <button className="gyrosContent" onClick={()=>foodToCart(gyros)}><FontAwesomeIcon icon={faCartShopping}/></button>
+    <button className="gyrosContent" onClick={()=>foodToCart(gyros.name,gyrosSpicy,gyrosMeat,gyrosPrice)}><FontAwesomeIcon icon={faCartShopping}/></button>
 </div>
 )}
 
