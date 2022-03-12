@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.77dbbbf0.css",
+    "main.js": "/static/js/main.12313f21.js",
+    "static/js/787.c0bb4d8b.chunk.js": "/static/js/787.c0bb4d8b.chunk.js",
+    "static/media/making_burger.jpg": "/static/media/making_burger.988016824f25499f6151.jpg",
+    "static/media/bacgroundmenu.jpg": "/static/media/bacgroundmenu.a13e03ed50617b5432ac.jpg",
+    "static/media/pizza_oven.jpg": "/static/media/pizza_oven.2b47b20010a167dd4670.jpg",
+    "static/media/pizza_1.jpg": "/static/media/pizza_1.8f92d06d70043bf39c4e.jpg",
+    "static/media/crew.jpg": "/static/media/crew.4e492b0dbfc04b8a6dbc.jpg",
+    "static/media/pizza_in_oven.jpg": "/static/media/pizza_in_oven.2e7289b88452881ecad6.jpg",
+    "static/media/gyrostal.jpg": "/static/media/gyrostal.67a740b79efaf682806b.jpg",
+    "static/media/gyros_tal.jpg": "/static/media/gyros_tal.09584ebc476049e5fa02.jpg",
+    "static/media/burger.jpg": "/static/media/burger.188d44fc416c26daa508.jpg",
+    "static/media/restaurant_blur_about_us_photo.svg": "/static/media/restaurant_blur_about_us_photo.192de0d6ad706bc11015.svg",
+    "static/media/Rajztábla 1.png": "/static/media/Rajztábla 1.03eb8b0154de2593eec3.png",
+    "static/media/hamburgerek-teteje-cut.gif": "/static/media/hamburgerek-teteje-cut.7dd098e1c3b980961ccf.gif",
+    "index.html": "/index.html",
+    "main.77dbbbf0.css.map": "/static/css/main.77dbbbf0.css.map",
+    "main.12313f21.js.map": "/static/js/main.12313f21.js.map",
+    "787.c0bb4d8b.chunk.js.map": "/static/js/787.c0bb4d8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77dbbbf0.css",
+    "static/js/main.12313f21.js"
+  ]
+}
