@@ -5,7 +5,7 @@ const Cart = ({ordered})=>{
         <div id="cartMainDiv">
             <div id="cartContent">
                 <div id="nameOfOrder">
-                    {ordered.map(order=> <p>{order.name} {order.meat} {order.spicy} {order.price}</p>)}
+                    {ordered.map(order=> <p>1x {order.name} {order.meat} {order.spicy} {order.price}</p>)}
                 </div>
                 <div id="priceOfOrder">
                     <p>Végösszeg:</p>

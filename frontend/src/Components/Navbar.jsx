@@ -4,7 +4,7 @@ import logo from "../Media/logo.png"
 import {Link} from "react-router-dom"
 
 
-const Navbar = ()=>{
+const Navbar = ({cartSum})=>{
     
     const [isOpen, setIsOpen] = useState("Open")
     const [canOrder, setCanOrder] = useState("")
@@ -91,7 +91,12 @@ const Navbar = ()=>{
                     <li><Link to="menu">Étlap</Link></li>
                     <li><Link to="aboutUs">Rólunk</Link></li>
                     <li><Link to="contactUs">Kapcsolat</Link></li>
-                    <li><Link to="cart">Kosár</Link></li>
+                    <li>
+                        <div className="cartSum">
+                            <Link to="cart">Kosár</Link>
+                            <p>{cartSum}</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div className={isShrunk ? "logoDiv logoDivScrolled" : "logoDiv"}>
