@@ -12,8 +12,8 @@ import React,{useState} from "react";
 
 function App() {
   const [ordered, setOrdered] = useState([])
-  const foodToCart = (food)=>{
-    let foodObj = {name: food.name, price: food.price}
+  const foodToCart = (name,spicy,meat,price)=>{
+    let foodObj = {name: name, price: price, spicy: spicy, meat: meat}
     ordered.push(foodObj)
     setOrdered([...ordered])
 }

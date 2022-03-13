@@ -361,6 +361,7 @@ ul li a:hover {
 /* etlap */
 
 .menu {
+  margin-top: -10px;
   position: relative;
   background-image: url("./Media/bacgroundmenu.jpg");
   /* background-position: center; */
@@ -449,6 +450,7 @@ ul li a:hover {
   border: 2px solid black;
   border-radius: 25px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 /* ABOUT US CSS */
@@ -749,7 +751,14 @@ ul li a:hover {
 
 .hamburger h3 {
   width: 200px;
-  height: 30px;
+  height: 35px;
   background-image: url("./Media/hamburgerek-teteje-cut.gif");
+  background-size: cover;
+}
+
+.hamburgerBuc{
+  height: 35px;
+  width: 165px;
+  background-image: url("./Media/Rajztábla\ 1.png");
   background-size: cover;
 }
