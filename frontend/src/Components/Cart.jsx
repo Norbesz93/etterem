@@ -5,7 +5,9 @@ const Cart = ({ordered})=>{
         <div id="cartMainDiv">
             <div id="cartContent">
                 <div id="nameOfOrder">
-                    {ordered.map(order=> <p>1x {order.name} {order.meat} {order.spicy} {order.price}</p>)}
+                    {ordered.map(order => ( order.spicy !== "" && order.meat !== "" ? 
+                    <p className="lineOfOrder">1x Termék: {order.name} Hús: {order.meat} Csípősség: {order.spicy} Ár: {order.price}</p> : 
+                    <p className="lineOfOrder">1x Termék: {order.name} Ár: {order.price}</p>))}
                 </div>
                 <div id="priceOfOrder">
                     <p>Végösszeg:</p>

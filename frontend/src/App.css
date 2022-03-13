@@ -402,6 +402,17 @@ ul li a:hover {
   border-radius: 40px;
 }
 
+#nameOfOrder {
+  margin: 12px;
+}
+
+.lineOfOrder {
+  font-size: 19px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
 #priceOfOrder {
   display: flex;
   gap: 5px;
@@ -765,7 +776,7 @@ ul li a:hover {
   background-size: cover;
 }
 
-.hamburgerBuc{
+.hamburgerBuc {
   height: 35px;
   width: 165px;
   background-image: url("./Media/Rajztábla\ 1.png");
