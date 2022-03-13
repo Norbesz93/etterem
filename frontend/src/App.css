@@ -222,6 +222,15 @@ nav {
   list-style-type: none;
 }
 
+.cartSum{
+  display: flex;
+}
+
+.cartSum p{
+  padding-left: 5px;
+  color: white;
+}
+
 li {
   padding-left: 5px;
   padding-top: 4px;
