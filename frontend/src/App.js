@@ -12,19 +12,20 @@ import React,{useState} from "react";
 
 function App() {
   const [ordered, setOrdered] = useState([])
+  const [cartSum, setCartSum] = useState(0)
   const foodToCart = (name,spicy,meat,price)=>{
     let foodObj = {name: name, price: price, spicy: spicy, meat: meat}
     ordered.push(foodObj)
     setOrdered([...ordered])
+    setCartSum(cartSum+1)
 }
-  console.log(ordered)
   return (
     <div className="App">
-      <Navbar />
+      <Navbar cartSum={cartSum} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="aboutUs" element={<AboutUs />} />
-        <Route path="menu" element={<Menu foodToCart={foodToCart} />} />
+        <Route path="menu" element={<Menu foodToCart={foodToCart} cartSum={cartSum} setCartSum={setCartSum} />} />
         <Route path="order" element={<Order />} />
         <Route path="contactUs" element={<ContactUs />} />
         <Route path="cart" element={<Cart ordered={ordered}/>} />
