@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/etterem/static/css/main.64ca12bd.css",
-    "main.js": "/etterem/static/js/main.f117b88f.js",
+    "main.css": "/etterem/static/css/main.01f38417.css",
+    "main.js": "/etterem/static/js/main.c08029d0.js",
     "static/js/787.c0bb4d8b.chunk.js": "/etterem/static/js/787.c0bb4d8b.chunk.js",
     "static/media/making_burger.jpg": "/etterem/static/media/making_burger.988016824f25499f6151.jpg",
     "static/media/bacgroundmenu.jpg": "/etterem/static/media/bacgroundmenu.a13e03ed50617b5432ac.jpg",
@@ -16,12 +16,12 @@
     "static/media/Rajztábla 1.png": "/etterem/static/media/Rajztábla 1.03eb8b0154de2593eec3.png",
     "static/media/hamburgerek-teteje-cut.gif": "/etterem/static/media/hamburgerek-teteje-cut.7dd098e1c3b980961ccf.gif",
     "index.html": "/etterem/index.html",
-    "main.64ca12bd.css.map": "/etterem/static/css/main.64ca12bd.css.map",
-    "main.f117b88f.js.map": "/etterem/static/js/main.f117b88f.js.map",
+    "main.01f38417.css.map": "/etterem/static/css/main.01f38417.css.map",
+    "main.c08029d0.js.map": "/etterem/static/js/main.c08029d0.js.map",
     "787.c0bb4d8b.chunk.js.map": "/etterem/static/js/787.c0bb4d8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64ca12bd.css",
-    "static/js/main.f117b88f.js"
+    "static/css/main.01f38417.css",
+    "static/js/main.c08029d0.js"
   ]
 }
