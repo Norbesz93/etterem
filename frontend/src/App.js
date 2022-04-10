@@ -14,9 +14,22 @@ function App() {
   const [ordered, setOrdered] = useState([])
   const [cartSum, setCartSum] = useState(0)
   const foodToCart = (name,spicy,meat,price)=>{
-    let foodObj = {name: name, price: price, spicy: spicy, meat: meat}
-    ordered.push(foodObj)
-    setOrdered([...ordered])
+    let piece = 1
+    let foodObj = {piece: piece, name: name, price: price, spicy: spicy, meat: meat}
+    if(ordered.length === 0){
+      ordered.push(foodObj)
+      setOrdered([...ordered])
+    }else{
+      for (const food of ordered) {
+        if (name === food.name && spicy === food.spicy && meat === food.meat){
+          food.piece = food.piece + 1
+        }else{
+          ordered.push(foodObj)
+          setOrdered([...ordered])
+        }
+        
+      }
+    }
     setCartSum(cartSum+1)
 }
   return (

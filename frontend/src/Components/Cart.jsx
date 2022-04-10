@@ -1,13 +1,12 @@
 const Cart = ({ordered})=>{
     const orderSum = ordered.map(order => order.price)
-    console.log(ordered)
     return(
         <div id="cartMainDiv">
             <div id="cartContent">
                 <div id="nameOfOrder">
                     {ordered.map(order => ( order.spicy !== "" && order.meat !== "" ? 
-                    <p className="lineOfOrder">1x Termék: {order.name} Hús: {order.meat} Csípősség: {order.spicy} Ár: {order.price}</p> : 
-                    <p className="lineOfOrder">1x Termék: {order.name} Ár: {order.price}</p>))}
+                    <p className="lineOfOrder">{order.piece}x Termék: {order.name}, Hús: {order.meat}, Csípősség: {order.spicy}, Ár: {order.price}</p> : 
+                    <p className="lineOfOrder">{order.piece}x Termék: {order.name}, Ár: {order.price}</p>))}
                 </div>
                 <div id="priceOfOrder">
                     <p>Végösszeg:</p>
