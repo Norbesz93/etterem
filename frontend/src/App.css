@@ -409,7 +409,9 @@ ul li a:hover {
 }
 
 #nameOfOrder {
+  height: 280px;
   margin: 12px;
+  overflow: auto;
 }
 
 .lineOfOrder {
@@ -422,7 +424,7 @@ ul li a:hover {
 #priceOfOrder {
   display: flex;
   gap: 5px;
-  margin: 15px;
+  margin-right: 40px;
   justify-content: end;
   align-content: flex-end;
 }
@@ -477,6 +479,11 @@ ul li a:hover {
   border-radius: 25px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+.removeCart{
+  cursor: pointer;
+  color: red;
 }
 
 /* ABOUT US CSS */
