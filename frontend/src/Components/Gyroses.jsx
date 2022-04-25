@@ -32,7 +32,7 @@ return(
             </option>)}
     </select>
     <p className="gyrosContent">{gyrosPrice}</p>
-    <button className="gyrosContent" onClick={()=>foodToCart(gyros.name,gyrosSpicy,gyrosMeat,gyrosPrice)}><FontAwesomeIcon icon={faCartShopping}/></button>
+    <span className="gyrosContent addCart" onClick={()=>foodToCart(gyros.name,gyrosSpicy,gyrosMeat,gyrosPrice)}><FontAwesomeIcon icon={faCartShopping} size="2x"/></span>
 </div>
 )}
 
