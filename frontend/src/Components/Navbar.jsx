@@ -19,7 +19,7 @@ const Navbar = ({cartSum})=>{
             { open: 9, close : 18 },
             { open: 9, close : 18 }, 
             { open: 9, close : 18 },
-            { open: 10, close : 16.5 }
+            { open: 10, close : 23 }
         ]
 
         function timeConverter(n){
