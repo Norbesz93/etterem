@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 const Home = ()=>{
     return(
         
-        <div>
+        <div id="homeMain">
             <div id="homeBackground">
                 <img  id="pizzaImg" src={pizzaOne} alt="pizza"></img>
             </div>

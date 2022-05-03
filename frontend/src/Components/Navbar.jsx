@@ -1,6 +1,9 @@
 import React,  { useState, useEffect } from "react";
 import logo from "../Media/logo.png"
 
+import bars from "../Media/bars-solid.svg"
+import cart from "../Media/cart-shopping-solid.svg"
+
 import {Link} from "react-router-dom"
 
 
@@ -98,8 +101,19 @@ const Navbar = ({cartSum})=>{
                         </div>
                     </li>
                 </ul>
+                <div className="hamburgerIconMobile">
+                    <img src={bars} alt="bars" />
+                    <ul>
+                        <li><Link to="menu">Étlap</Link></li>
+                        <li><Link to="aboutUs">Rólunk</Link></li>
+                        <li><Link to="contactUs">Kapcsolat</Link></li>
+                    </ul>
+                </div>
             </div>
             <div className={isShrunk ? "logoDiv logoDivScrolled" : "logoDiv"}>
+                <div id="shoppingCartMobile">
+                    <img src={cart} alt="shopping-cart" />
+                </div>
                 <h1><Link to="/"><img className={isShrunk ? "imageDiv imageDivScrolled" : "imageDiv"} src={logo} alt="logo"/></Link></h1>
             </div>
         </nav>
