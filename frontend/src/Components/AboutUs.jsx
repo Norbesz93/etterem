@@ -50,7 +50,7 @@ const AboutUs = ()=>{
         }
 
         return(
-            <div className="slider">
+            <div className="sliderInAbout">
                 <button className="left-arrow" onClick={prevSlide}>Előző</button>
                 {slides.map((slide,index) => {
                     return <div className={index === current ? "slide active" : "slide"}

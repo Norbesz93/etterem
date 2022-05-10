@@ -12,6 +12,7 @@ const Navbar = ({cartSum})=>{
     const [isOpen, setIsOpen] = useState("Open")
     const [canOrder, setCanOrder] = useState("")
     const [isShrunk, setShrunk] = useState(false);
+    const [isClicked, setIsClicked] = useState(false);
 
     const date = new Date()
 
@@ -51,6 +52,16 @@ const Navbar = ({cartSum})=>{
         }
         
     console.log("the shop will close in %s hours", remainTime);
+    }
+
+    const hamburgerIconClick = () => {
+        if(isClicked === false){
+            setIsClicked(true);
+            console.log(isClicked)
+        }else{
+            setIsClicked(false)
+            console.log(isClicked)
+        }
     }
 
     useEffect(() => {
@@ -102,8 +113,8 @@ const Navbar = ({cartSum})=>{
                     </li>
                 </ul>
                 <div className="hamburgerIconMobile">
-                    <img src={bars} alt="bars" />
-                    <ul>
+                    <img src={bars} alt="bars" onClick={() => hamburgerIconClick()} />
+                    <ul className={ isClicked ? "mobileMenuVisible" : "mobileMenuNotVisible"}>
                         <li><Link to="menu">Étlap</Link></li>
                         <li><Link to="aboutUs">Rólunk</Link></li>
                         <li><Link to="contactUs">Kapcsolat</Link></li>
@@ -112,7 +123,7 @@ const Navbar = ({cartSum})=>{
             </div>
             <div className={isShrunk ? "logoDiv logoDivScrolled" : "logoDiv"}>
                 <div id="shoppingCartMobile">
-                    <img src={cart} alt="shopping-cart" />
+                    <Link to="cart"><img src={cart} alt="shopping-cart" /></Link>
                 </div>
                 <h1><Link to="/"><img className={isShrunk ? "imageDiv imageDivScrolled" : "imageDiv"} src={logo} alt="logo"/></Link></h1>
             </div>

@@ -488,7 +488,7 @@ ul li a:hover {
 /* ABOUT US CSS */
 
 #aboutUsMain {
-  background-color: #f3f0f0;
+  background-color: #F6F2E2;
   background-image: url("./Media/restaurant_blur_about_us_photo.svg");
   display: flex;
   flex-direction: column;
@@ -536,7 +536,7 @@ ul li a:hover {
 }
 
 /* SLIDESHOW IN ABOUT US */
-.slider {
+.sliderInAbout {
   position: relative;
   height: 500px;
   display: flex;
@@ -931,12 +931,6 @@ ul li a:hover {
     margin-left: 12px;
   }
 
-  .hamburgerIconMobile ul {
-    display: block;
-    position: absolute;
-    background-color: red;
-    opacity: 40%;
-  }
   #shoppingCartMobile{
     display: block;
     margin-top: 19px;
@@ -951,6 +945,26 @@ ul li a:hover {
   #homeBackground {
     display: none;
   }
+
+  .mobileMenuVisible{
+    list-style: none;
+    display: block;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    padding-top: 20px;
+    top: 190%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcoral;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  .mobileMenuNotVisible{
+    display: none;
+  }
+  
 }
 
 @media screen and (min-width: 600px) {
@@ -962,4 +976,107 @@ ul li a:hover {
     display: none;
   }
 
+}
+
+/* ABOUT US ON MOBILE */
+
+@media screen and (max-width: 1070px){
+  #aboutUsMain {
+    background-color: #F6F2E2;
+    background-image: none;
+  }
+  #aboutUsTitle {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .aboutUsSections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    gap: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .aboutUsPictures img {
+    max-width: 350px;
+    height: auto;
+    border: 4px solid black;
+    border-radius: 40px;
+  }
+
+  .aboutUsTexts {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 350px;
+    height: auto;
+    border: 4px solid black;
+    border-radius: 40px;
+  }
+  .aboutUsTexts p {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .sliderInAbout {
+    display: none;
+  }
+}
+
+/* CONTACT US MOBILE */
+
+@media screen and (max-width: 690px){
+  .contactUsMainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f0f0;
+    gap: 10px;
+  }
+  
+  .contactUsMainDiv div:nth-child(1) {
+    font-size: 13px;
+    margin-top: 200px;
+  }
+  .contactUsMainDiv div:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .contactUsMainDiv div:nth-child(3) {
+    margin-bottom: 70px;
+    font-size: 13px;
+    
+  }
+  .contactUsDetails {
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 20px;
+  }
+  
+  /* CONTACT US MAP */
+  
+  .mapouter {
+    text-align: right;
+  }
+  
+  .mapFrame {
+    border-radius: 40px;
+    border: 2px solid black;
+    height: 180px;
+    width: 350px;
+    margin-top: -140px;
+    margin-bottom: 20px;
+  }
+  
+  .gmap_canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
