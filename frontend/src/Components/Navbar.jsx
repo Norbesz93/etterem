@@ -12,6 +12,7 @@ const Navbar = ({cartSum})=>{
     const [isOpen, setIsOpen] = useState("Open")
     const [canOrder, setCanOrder] = useState("")
     const [isShrunk, setShrunk] = useState(false);
+    const [isClicked, setIsClicked] = useState(false);
 
     const date = new Date()
 
@@ -51,6 +52,14 @@ const Navbar = ({cartSum})=>{
         }
         
     console.log("the shop will close in %s hours", remainTime);
+    }
+
+    const hamburgerIconClick = () => {
+        if(isClicked === false){
+            setIsClicked(true);  
+        }else{
+            setIsClicked(false)
+        }
     }
 
     useEffect(() => {
@@ -102,17 +111,17 @@ const Navbar = ({cartSum})=>{
                     </li>
                 </ul>
                 <div className="hamburgerIconMobile">
-                    <img src={bars} alt="bars" />
-                    <ul>
-                        <li><Link to="menu">Étlap</Link></li>
-                        <li><Link to="aboutUs">Rólunk</Link></li>
-                        <li><Link to="contactUs">Kapcsolat</Link></li>
+                    <img src={bars} alt="bars" onClick={() => hamburgerIconClick()} />
+                    <ul className={ isClicked ? "mobileMenuVisible" : "mobileMenuNotVisible"}>
+                        <li onClick={() => hamburgerIconClick()}><Link to="menu">Étlap</Link></li>
+                        <li onClick={() => hamburgerIconClick()}><Link to="aboutUs">Rólunk</Link></li>
+                        <li onClick={() => hamburgerIconClick()}><Link to="contactUs">Kapcsolat</Link></li>
                     </ul>
                 </div>
             </div>
             <div className={isShrunk ? "logoDiv logoDivScrolled" : "logoDiv"}>
-                <div id="shoppingCartMobile">
-                    <img src={cart} alt="shopping-cart" />
+                <div id="shoppingCartMobile" onClick={() => hamburgerIconClick()}>
+                    <Link to="cart"><img src={cart} alt="shopping-cart" /></Link>
                 </div>
                 <h1><Link to="/"><img className={isShrunk ? "imageDiv imageDivScrolled" : "imageDiv"} src={logo} alt="logo"/></Link></h1>
             </div>
