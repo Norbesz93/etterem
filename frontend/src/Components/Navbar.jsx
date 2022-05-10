@@ -56,11 +56,9 @@ const Navbar = ({cartSum})=>{
 
     const hamburgerIconClick = () => {
         if(isClicked === false){
-            setIsClicked(true);
-            console.log(isClicked)
+            setIsClicked(true);  
         }else{
             setIsClicked(false)
-            console.log(isClicked)
         }
     }
 
@@ -115,14 +113,14 @@ const Navbar = ({cartSum})=>{
                 <div className="hamburgerIconMobile">
                     <img src={bars} alt="bars" onClick={() => hamburgerIconClick()} />
                     <ul className={ isClicked ? "mobileMenuVisible" : "mobileMenuNotVisible"}>
-                        <li><Link to="menu">Étlap</Link></li>
-                        <li><Link to="aboutUs">Rólunk</Link></li>
-                        <li><Link to="contactUs">Kapcsolat</Link></li>
+                        <li onClick={() => hamburgerIconClick()}><Link to="menu">Étlap</Link></li>
+                        <li onClick={() => hamburgerIconClick()}><Link to="aboutUs">Rólunk</Link></li>
+                        <li onClick={() => hamburgerIconClick()}><Link to="contactUs">Kapcsolat</Link></li>
                     </ul>
                 </div>
             </div>
             <div className={isShrunk ? "logoDiv logoDivScrolled" : "logoDiv"}>
-                <div id="shoppingCartMobile">
+                <div id="shoppingCartMobile" onClick={() => hamburgerIconClick()}>
                     <Link to="cart"><img src={cart} alt="shopping-cart" /></Link>
                 </div>
                 <h1><Link to="/"><img className={isShrunk ? "imageDiv imageDivScrolled" : "imageDiv"} src={logo} alt="logo"/></Link></h1>
