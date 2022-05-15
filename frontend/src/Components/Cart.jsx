@@ -8,10 +8,10 @@ const Cart = ({ ordered, removeFromCart }) => {
                 <div id="nameOfOrder">
                     {ordered.map(order => (order.spicy !== "" && order.meat !== "" ?
                         <p className="lineOfOrder">{order.piece}x Termék: {order.name}, Hús: {order.meat}, Csípősség: {order.spicy}, Ár: {order.price}
-                            <span className="removeCart"><FontAwesomeIcon icon={faTrashCan} /></span>
+                            <span className="removeCart" onClick={()=>removeFromCart(order.name, order.spicy, order.meat)}><FontAwesomeIcon icon={faTrashCan} /></span>
                         </p> :
                         <p className="lineOfOrder">{order.piece}x Termék: {order.name}, Ár: {order.price}
-                            <span className="removeCart" onClick={()=>removeFromCart(order.name)}><FontAwesomeIcon icon={faTrashCan} /></span>
+                            <span className="removeCart" onClick={()=>removeFromCart(order.name, order.spicy, order.meat)}><FontAwesomeIcon icon={faTrashCan} /></span>
                         </p>))}
                 </div>
                 <div id="priceOfOrder">

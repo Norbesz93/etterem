@@ -372,10 +372,10 @@ ul li a:hover {
 /* etlap */
 
 .menu {
-  height: 100%;
+  /* height: 100%;
   width: 100%;
-  margin-top: -10px;
-  position: relative;
+  margin-top: 60px;
+  position: relative; */
   background-image: url("./Media/bacgroundmenu.jpg");
   /* background-position: center; */
   background-repeat: no-repeat;
@@ -483,6 +483,8 @@ ul li a:hover {
 .removeCart {
   cursor: pointer;
   color: red;
+  float: right;
+  margin-right: 10px;
 }
 
 /* ABOUT US CSS */
@@ -643,17 +645,14 @@ ul li a:hover {
 
 /* ETLAP CSS */
 
-.what {
-  margin-top: 90px;
-  font-size: 40px;
-  text-align: center;
-  padding: 20px;
-}
-
 .foods {
   display: flex;
   height: 300px;
   justify-content: center;
+}
+
+.hely{
+  height: 100px;
 }
 
 .foodPic {
@@ -670,11 +669,12 @@ ul li a:hover {
 }
 
 .gyrosok h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .gyrosok {
-  margin-top: 75px;
   position: relative;
   height: 620px;
 }
@@ -766,7 +766,6 @@ ul li a:hover {
 }
 
 .menu h2 {
-  margin: auto;
   width: 250px;
   text-align: center;
   font-size: 40px;
@@ -1182,8 +1181,4 @@ ul li a:hover {
     cursor: pointer;
   }
   
-  .removeCart {
-    cursor: pointer;
-    color: red;
-  }
 }
