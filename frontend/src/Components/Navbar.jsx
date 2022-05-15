@@ -1,14 +1,18 @@
 import React,  { useState, useEffect } from "react";
 import logo from "../Media/logo.png"
 
+import bars from "../Media/bars-solid.svg"
+import cart from "../Media/cart-shopping-solid.svg"
+
 import {Link} from "react-router-dom"
 
 
-const Navbar = ()=>{
+const Navbar = ({cartSum})=>{
     
     const [isOpen, setIsOpen] = useState("Open")
     const [canOrder, setCanOrder] = useState("")
     const [isShrunk, setShrunk] = useState(false);
+    const [isClicked, setIsClicked] = useState(false);
 
     const date = new Date()
 
@@ -19,7 +23,7 @@ const Navbar = ()=>{
             { open: 9, close : 18 },
             { open: 9, close : 18 }, 
             { open: 9, close : 18 },
-            { open: 10, close : 16.5 }
+            { open: 10, close : 23 }
         ]
 
         function timeConverter(n){
@@ -48,6 +52,14 @@ const Navbar = ()=>{
         }
         
     console.log("the shop will close in %s hours", remainTime);
+    }
+
+    const hamburgerIconClick = () => {
+        if(isClicked === false){
+            setIsClicked(true);  
+        }else{
+            setIsClicked(false)
+        }
     }
 
     useEffect(() => {
@@ -91,10 +103,26 @@ const Navbar = ()=>{
                     <li><Link to="menu">Étlap</Link></li>
                     <li><Link to="aboutUs">Rólunk</Link></li>
                     <li><Link to="contactUs">Kapcsolat</Link></li>
-                    <li><Link to="cart">Kosár</Link></li>
+                    <li>
+                        <div className="cartSum">
+                            <Link to="cart">Kosár</Link>
+                            <p>{cartSum}</p>
+                        </div>
+                    </li>
                 </ul>
+                <div className="hamburgerIconMobile">
+                    <img src={bars} alt="bars" onClick={() => hamburgerIconClick()} />
+                    <ul className={ isClicked ? "mobileMenuVisible" : "mobileMenuNotVisible"}>
+                        <li onClick={() => hamburgerIconClick()}><Link to="menu">Étlap</Link></li>
+                        <li onClick={() => hamburgerIconClick()}><Link to="aboutUs">Rólunk</Link></li>
+                        <li onClick={() => hamburgerIconClick()}><Link to="contactUs">Kapcsolat</Link></li>
+                    </ul>
+                </div>
             </div>
             <div className={isShrunk ? "logoDiv logoDivScrolled" : "logoDiv"}>
+                <div id="shoppingCartMobile" onClick={() => hamburgerIconClick()}>
+                    <Link to="cart"><img src={cart} alt="shopping-cart" /></Link>
+                </div>
                 <h1><Link to="/"><img className={isShrunk ? "imageDiv imageDivScrolled" : "imageDiv"} src={logo} alt="logo"/></Link></h1>
             </div>
         </nav>

@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
+/* html {
   background-color: green;
-}
-
-/* body {
-  margin-top: 80px ;
 } */
+
+body {
+  font-family: "Oswald", sans-serif;
+}
 
 .buttons {
   margin: 30px;
@@ -222,6 +224,15 @@ nav {
   list-style-type: none;
 }
 
+.cartSum {
+  display: flex;
+}
+
+.cartSum p {
+  padding-left: 5px;
+  color: white;
+}
+
 li {
   padding-left: 5px;
   padding-top: 4px;
@@ -361,13 +372,16 @@ ul li a:hover {
 /* etlap */
 
 .menu {
-  margin-top: -10px;
-  position: relative;
+  /* height: 100%;
+  width: 100%;
+  margin-top: 60px;
+  position: relative; */
   background-image: url("./Media/bacgroundmenu.jpg");
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  z-index: 3;
 }
 
 /* CART CSS */
@@ -393,10 +407,23 @@ ul li a:hover {
   border-radius: 40px;
 }
 
+#nameOfOrder {
+  height: 280px;
+  margin: 12px;
+  overflow: auto;
+}
+
+.lineOfOrder {
+  font-size: 19px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
 #priceOfOrder {
   display: flex;
   gap: 5px;
-  margin: 15px;
+  margin-right: 40px;
   justify-content: end;
   align-content: flex-end;
 }
@@ -453,10 +480,17 @@ ul li a:hover {
   cursor: pointer;
 }
 
+.removeCart {
+  cursor: pointer;
+  color: red;
+  float: right;
+  margin-right: 10px;
+}
+
 /* ABOUT US CSS */
 
 #aboutUsMain {
-  background-color: #f3f0f0;
+  background-color: #F6F2E2;
   background-image: url("./Media/restaurant_blur_about_us_photo.svg");
   display: flex;
   flex-direction: column;
@@ -504,7 +538,7 @@ ul li a:hover {
 }
 
 /* SLIDESHOW IN ABOUT US */
-.slider {
+.sliderInAbout {
   position: relative;
   height: 500px;
   display: flex;
@@ -611,17 +645,14 @@ ul li a:hover {
 
 /* ETLAP CSS */
 
-.what {
-  margin-top: 90px;
-  font-size: 40px;
-  text-align: center;
-  padding: 20px;
-}
-
 .foods {
   display: flex;
   height: 300px;
   justify-content: center;
+}
+
+.hely{
+  height: 100px;
 }
 
 .foodPic {
@@ -638,30 +669,27 @@ ul li a:hover {
 }
 
 .gyrosok h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .gyrosok {
-  margin-top: 75px;
   position: relative;
   height: 620px;
 }
 
 .Gyros {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 500px;
   height: 200px;
   border-radius: 10%;
   padding-top: 18px;
 }
 
-.Gyros button {
+.addCart {
   cursor: pointer;
-  height: 35px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: green;
+  color: green;
 }
 
 .gyrosContent {
@@ -672,6 +700,14 @@ ul li a:hover {
   position: absolute;
   text-align: center;
   right: 100px;
+  background: rgba(3, 3, 3, 0.5);
+}
+
+.pita select {
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .tál {
@@ -679,6 +715,14 @@ ul li a:hover {
   text-align: center;
   left: 100px;
   top: 400px;
+  background: rgba(3, 3, 3, 0.5);
+}
+
+.tál select {
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .pizzas {
@@ -688,7 +732,6 @@ ul li a:hover {
 
 .pizza {
   margin: 20px;
-  border: 1px solid wheat;
   border-radius: 10%;
   height: 150px;
   width: 300px;
@@ -696,35 +739,37 @@ ul li a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background: rgba(3, 3, 3, 0.5);
 }
 
 .pizza p {
   padding: 5px;
 }
 
-.pizza button {
-  cursor: pointer;
-  height: 35px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: green;
-}
-
 .hamburger {
-  height: 150px;
+  display: flex;
+  justify-content: center;
   margin: 20px;
   flex-basis: 30%;
-  border: 1px solid;
   text-align: center;
+}
+
+.hambox {
+  height: 180px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  background: rgba(3, 3, 3, 0.5);
+  border-radius: 20%;
 }
 
 .menu h2 {
+  width: 250px;
   text-align: center;
+  font-size: 40px;
+  background: rgba(3, 3, 3, 0.5);
 }
 
 .hamburgers {
@@ -734,19 +779,11 @@ ul li a:hover {
 }
 
 .hamburger select {
-  width: 150px;
+  height: 25px;
+  width: 180px;
   text-align: center;
   background-color: green;
   border-radius: 10px;
-}
-
-.hamburger button {
-  cursor: pointer;
-  height: 35px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: green;
 }
 
 .hamburger h3 {
@@ -756,9 +793,392 @@ ul li a:hover {
   background-size: cover;
 }
 
-.hamburgerBuc{
+.hamburgerBuc {
   height: 35px;
   width: 165px;
   background-image: url("./Media/Rajztábla\ 1.png");
   background-size: cover;
+}
+
+/* SLIDER CSS */
+
+.slider {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  position: absolute;
+}
+.slider .wrapper {
+  height: 100vh;
+  transition: 0.5s all linear;
+  will-change: transform;
+}
+.slider .arrows {
+  position: absolute;
+  top: 50%;
+  background: none;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  transition: ease 0.3s all;
+  outline: none;
+}
+.slider .arrows.prev {
+  left: 0;
+}
+.slider .arrows.prev:hover {
+  opacity: 0.7;
+  left: -10px;
+}
+.slider .arrows.next {
+  right: 0;
+}
+.slider .arrows.next:hover {
+  right: -10px;
+  opacity: 0.7;
+}
+.slider .dots-container {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: auto;
+  text-align: center;
+  left: 50%;
+  bottom: 9px;
+  transform: translateX(-50%);
+  z-index: 10;
+  list-style-type: none;
+}
+.slider .dots-container li {
+  display: inline-block;
+  padding: 5px;
+}
+.slider .dots-container li.active button {
+  color: #00D8FF;
+}
+.slider .dots-container li button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+.slider .dots-container li button:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.slider .toggle-play {
+  background: transparent;
+  border: none;
+  height: auto;
+  position: absolute;
+  width: auto;
+  right: 5%;
+  bottom: 9px;
+  color: #3d3d3d;
+  z-index: 1000000;
+}
+.slider .toggle-play:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.slider .each-slide {
+  width: 100%;
+  height: 60vh;
+  float: left;
+  line-height: 100vh;
+  font-size: 40vh;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-color: transparent;
+}
+
+
+/* MOBILE VIEWS */
+
+/* NAVBAR ON MOBILE */
+
+@media screen and (max-width: 950px) {
+  .firstDivInNav {
+    display: none;
+  }
+  .secondDivInNav {
+    height: 60px;
+  }
+
+  .logoDiv {
+    top: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #homeMain{
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F2E2;
+  }
+  #navList {
+    display: none;
+  }
+  .hamburgerIconMobile {
+    display: block;
+    width: 30px;
+    height: auto;
+    color: white;
+    margin-left: 12px;
+  }
+
+  #shoppingCartMobile{
+    display: block;
+    margin-top: 19px;
+    width: 25px;
+    height: auto;
+  }
+  .logoDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+  }
+  #homeBackground {
+    display: none;
+  }
+
+  .mobileMenuVisible{
+    list-style: none;
+    display: block;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    padding-top: 20px;
+    top: 190%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcoral;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  .mobileMenuNotVisible{
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 600px) {
+  .hamburgerIconMobile {
+    display: none;
+  }
+
+  #shoppingCartMobile{
+    display: none;
+  }
+
+}
+
+/* ABOUT US ON MOBILE */
+
+@media screen and (max-width: 1070px){
+  #aboutUsMain {
+    background-color: #F6F2E2;
+    background-image: none;
+  }
+  #aboutUsTitle {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .aboutUsSections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    gap: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .aboutUsPictures img {
+    max-width: 350px;
+    height: auto;
+    border: 4px solid black;
+    border-radius: 40px;
+  }
+
+  .aboutUsTexts {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 350px;
+    height: auto;
+    border: 4px solid black;
+    border-radius: 40px;
+  }
+  .aboutUsTexts p {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .sliderInAbout {
+    display: none;
+  }
+}
+
+/* CONTACT US MOBILE */
+
+@media screen and (max-width: 690px){
+  .contactUsMainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f0f0;
+    gap: 10px;
+  }
+  
+  .contactUsMainDiv div:nth-child(1) {
+    font-size: 13px;
+    margin-top: 200px;
+  }
+  .contactUsMainDiv div:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .contactUsMainDiv div:nth-child(3) {
+    margin-bottom: 70px;
+    font-size: 13px;
+    
+  }
+  .contactUsDetails {
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 20px;
+  }
+  
+  /* CONTACT US MAP */
+  
+  .mapouter {
+    text-align: right;
+  }
+  
+  .mapFrame {
+    border-radius: 40px;
+    border: 2px solid black;
+    height: 180px;
+    width: 350px;
+    margin-top: -140px;
+    margin-bottom: 20px;
+  }
+  
+  .gmap_canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* CART VIEW ON MOBILE */
+
+@media screen and (max-width: 770px){
+  #cartMainDiv {
+    background-color: #f3f0f0;
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #cartContent {
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 330px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 30px;
+  }
+  
+  #nameOfOrder {
+    height: 130px;
+    margin: 12px;
+    overflow: auto;
+  }
+  
+  .lineOfOrder {
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+  }
+  
+  #priceOfOrder {
+    display: flex;
+    gap: 5px;
+    margin-right: 11px;
+    
+  }
+  
+  #customerDetails {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    
+  }
+  
+  .customerDetailsLabels {
+    font-size: 18px;
+    text-decoration: underline;
+    
+  }
+  
+  .nameTelAddress {
+    background-color: white;
+    border: 2px solid black;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  #commentDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  #commentFieldLabel {
+    font-size: 20px;
+    text-decoration: underline;
+    margin-right: 5px;
+  }
+  
+  #commentField {
+    background-color: white;
+    border: 2px solid black;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+  }
+  
+  #orderBtn {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #c10e0e;
+    color: black;
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
 }

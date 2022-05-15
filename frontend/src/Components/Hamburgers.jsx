@@ -16,6 +16,7 @@ const Hamburgers = ({hamburger, foodToCart}) =>{
     }
     return(
     <div className="hamburger">
+        <div className="hambox">
         <h3>{hamburger.name}</h3>
         <select onChange={priceUpdate} name="meat" >
             {hamburger.meat.map(meat =>
@@ -29,8 +30,8 @@ const Hamburgers = ({hamburger, foodToCart}) =>{
                     {spicy}
                 </option>)}
         </select>
-        <p className="hamburgerBuc">{hamburgerPrice} <button onClick={()=>foodToCart(hamburger.name,spicy,meat,hamburgerPrice)}><FontAwesomeIcon icon={faCartShopping}/></button></p>
-                
+        <p className="hamburgerBuc">{hamburgerPrice} <span className="addCart" onClick={()=>foodToCart(hamburger.name,spicy,meat,hamburgerPrice)}><FontAwesomeIcon icon={faCartShopping} size="2x"/></span></p>
+        </div>
     </div>
 )}
 
