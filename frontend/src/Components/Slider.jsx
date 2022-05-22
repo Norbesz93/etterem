@@ -10,22 +10,22 @@ import img6 from "../Media/HomeSlideshow/responsive.465.220.noborder.a825f566a23
 
 const slides = [
     {
-      eachSlide: img1,
+      eachSlide: `url(${img1})`,
     },
     {
-      eachSlide: img2,
+      eachSlide: `url(${img2})`,
     },
     {
-      eachSlide: img3,
+      eachSlide: `url(${img3})`,
     },
     {
-      eachSlide: img4,
+      eachSlide: `url(${img4})`,
     },
     {
-      eachSlide: img5,
+      eachSlide: `url(${img5})`,
     },
     {
-      eachSlide: img6,
+      eachSlide: `url(${img6})`,
     }
 ];
 

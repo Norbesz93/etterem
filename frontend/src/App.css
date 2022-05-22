@@ -7,7 +7,7 @@
 }
 
 /* html {
-  background-color: green;
+  background-color: #43A042;
 } */
 
 body {
@@ -184,7 +184,7 @@ nav {
   align-items: center;
   gap: 30px;
   width: 100%;
-  background-color: green;
+  background-color: #43A042;
   height: 40px;
   transition: height 1s;
 }
@@ -346,7 +346,7 @@ ul li a:hover {
   align-items: center;
   gap: 30px;
   width: 100%;
-  background-color: green;
+  background-color: #43A042;
   height: 40px;
 }
 
@@ -372,22 +372,14 @@ ul li a:hover {
 /* etlap */
 
 .menu {
-  /* height: 100%;
-  width: 100%;
-  margin-top: 60px;
-  position: relative; */
-  background-image: url("./Media/bacgroundmenu.jpg");
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  z-index: 3;
+  background-color: #F6F2E2;
+  color: black;
 }
 
 /* CART CSS */
 
 #cartMainDiv {
-  background-color: #f3f0f0;
+  background-color: #F6F2E2;
   border: 1px solid black;
   height: auto;
   width: 100%;
@@ -601,7 +593,7 @@ ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f3f0f0;
+  background-color: #F6F2E2;
   gap: 20px;
 }
 
@@ -645,21 +637,43 @@ ul li a:hover {
 
 /* ETLAP CSS */
 
-.foods {
+.what{
+  background-image: url('./Media/kemence.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1000px;
+  margin: auto;
+}
+
+.kaja{
+  border: 2px solid black;
+}
+
+.foods{
   display: flex;
-  height: 300px;
+  height: 400px;
   justify-content: center;
+  align-items: flex-end;
+}
+
+.mit{
+  margin: auto;
+  font-style: italic;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: #43A042;
 }
 
 .hely{
-  height: 100px;
+  height: 80px;
 }
 
 .foodPic {
   height: 200px;
   margin: 50px;
   width: 250px;
-  border-radius: 40%;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -668,11 +682,6 @@ ul li a:hover {
   width: 300px;
 }
 
-.gyrosok h2 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-}
 
 .gyrosok {
   position: relative;
@@ -681,7 +690,7 @@ ul li a:hover {
 
 .Gyros {
   /* border: 1px solid white; */
-  width: 500px;
+  width: 450px;
   height: 200px;
   border-radius: 10%;
   padding-top: 18px;
@@ -689,7 +698,7 @@ ul li a:hover {
 
 .addCart {
   cursor: pointer;
-  color: green;
+  color: #43A042;
 }
 
 .gyrosContent {
@@ -697,10 +706,10 @@ ul li a:hover {
 }
 
 .pita {
+  margin-top: 20px;
   position: absolute;
   text-align: center;
-  right: 100px;
-  background: rgba(3, 3, 3, 0.5);
+  right: 300px;
 }
 
 .pita select {
@@ -713,9 +722,8 @@ ul li a:hover {
 .tál {
   position: absolute;
   text-align: center;
-  left: 100px;
+  left: 300px;
   top: 400px;
-  background: rgba(3, 3, 3, 0.5);
 }
 
 .tál select {
@@ -726,8 +734,10 @@ ul li a:hover {
 }
 
 .pizzas {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
+  width: 1200px;
 }
 
 .pizza {
@@ -735,11 +745,11 @@ ul li a:hover {
   border-radius: 10%;
   height: 150px;
   width: 300px;
+  flex-basis: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: rgba(3, 3, 3, 0.5);
 }
 
 .pizza p {
@@ -748,20 +758,20 @@ ul li a:hover {
 
 .hamburger {
   display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
   justify-content: center;
-  margin: 20px;
   flex-basis: 30%;
   text-align: center;
 }
 
 .hambox {
   height: 180px;
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background: rgba(3, 3, 3, 0.5);
   border-radius: 20%;
 }
 
@@ -769,7 +779,7 @@ ul li a:hover {
   width: 250px;
   text-align: center;
   font-size: 40px;
-  background: rgba(3, 3, 3, 0.5);
+  margin: auto;
 }
 
 .hamburgers {
@@ -782,7 +792,7 @@ ul li a:hover {
   height: 25px;
   width: 180px;
   text-align: center;
-  background-color: green;
+  background-color: #43A042;
   border-radius: 10px;
 }
 
@@ -1181,4 +1191,11 @@ ul li a:hover {
     cursor: pointer;
   }
   
+}
+
+/* MENU ON MOBILE */
+
+@media screen and (max-width: 1070px){
+  
+
 }
