@@ -16,7 +16,7 @@ const Gyroses = ({gyros, foodToCart})=>{
         setGyrosMeat(e.target.value)
     }
 return(
-<div className={gyros.name}>
+<div className={`${gyros.name} kaja`}>
     <h3 className="gyrosContent">{gyros.name}</h3>
     <select className="gyrosContent" onChange={priceUpdate} name="gyrosMeat">
         {gyros.meat.map(meat =>

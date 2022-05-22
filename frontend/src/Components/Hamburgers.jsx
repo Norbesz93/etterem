@@ -16,7 +16,7 @@ const Hamburgers = ({hamburger, foodToCart}) =>{
     }
     return(
     <div className="hamburger">
-        <div className="hambox">
+        <div className="hambox kaja">
         <h3>{hamburger.name}</h3>
         <select onChange={priceUpdate} name="meat" >
             {hamburger.meat.map(meat =>
