@@ -6,7 +6,6 @@ import AboutUs from "./Components/AboutUs";
 import Order from "./Components/Order";
 import ContactUs from "./Components/ContactUs";
 import Home from "./Components/Home";
-import Footer from "./Components/Footer";
 import Cart from "./Components/Cart";
 import React, { useState } from "react";
 
@@ -34,7 +33,7 @@ function App() {
           console.log(food.name);
           console.log(food.piece);
           food.piece = food.piece + 1;
-          food.price = food.price + food.price;
+          food.price = food.price + price;
           if (find) {
             break;
           }
@@ -42,13 +41,36 @@ function App() {
       }
       if (!find) {
         console.log(find);
-        ordered.unshift(foodObj);
+        ordered.push(foodObj);
         setOrdered([...ordered]);
       }
     }
     setCartSum(cartSum + 1);
   };
-  const removeFromCart = (name, spicy, meat) => {};
+  const removeFromCart = (name, spicy, meat) => {
+    let find = false;
+    let counter = 0
+    for (const food of ordered) {
+      if (name === food.name && spicy === food.spicy && meat === food.meat) {
+        find = true;
+        console.log(name);
+        console.log(food.name);
+        console.log(food.piece);
+        if(food.piece === 1){
+          ordered.splice(counter, 1)
+          setOrdered([...ordered]);
+        }else{
+        food.price = food.price - food.price/food.piece;
+        food.piece = food.piece - 1;
+        }
+        if (find) {
+          break;
+        }
+      }
+      counter = counter + 1
+    }
+    setCartSum(cartSum - 1);
+  };
   return (
     <div className="App">
       <Navbar cartSum={cartSum} />
