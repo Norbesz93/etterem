@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/etterem/static/css/main.f02be279.css",
-    "main.js": "/etterem/static/js/main.b2018241.js",
+    "main.css": "/etterem/static/css/main.c8b7555d.css",
+    "main.js": "/etterem/static/js/main.7d4fdb86.js",
     "static/js/787.c0bb4d8b.chunk.js": "/etterem/static/js/787.c0bb4d8b.chunk.js",
     "static/media/making_burger.jpg": "/etterem/static/media/making_burger.988016824f25499f6151.jpg",
     "static/media/Good-Things-Come-In-Fours-WIP-Ad-Image.jpg": "/etterem/static/media/Good-Things-Come-In-Fours-WIP-Ad-Image.d0059f927cbd88958c96.jpg",
@@ -14,6 +14,7 @@
     "static/media/RendeljElvitelre-FizessAppon_rajzos-B_rotator_1800x760px_2.jpg": "/etterem/static/media/RendeljElvitelre-FizessAppon_rajzos-B_rotator_1800x760px_2.fca958ca0adc3b76f70a.jpg",
     "static/media/burger.jpg": "/etterem/static/media/burger.188d44fc416c26daa508.jpg",
     "static/media/maxresdefault (1).jpg": "/etterem/static/media/maxresdefault (1).f3cd2798f9cab1f76fbe.jpg",
+    "static/media/kemence.jpg": "/etterem/static/media/kemence.7855896d52cf9c038fe1.jpg",
     "static/media/web-ingyenhazhoz_1_.jpg": "/etterem/static/media/web-ingyenhazhoz_1_.ffcd00c228f6957fb5c1.jpg",
     "static/media/restaurant_blur_about_us_photo.svg": "/etterem/static/media/restaurant_blur_about_us_photo.192de0d6ad706bc11015.svg",
     "static/media/maxresdefault.jpg": "/etterem/static/media/maxresdefault.baeb20745594fb236928.jpg",
@@ -23,12 +24,12 @@
     "static/media/cart-shopping-solid.svg": "/etterem/static/media/cart-shopping-solid.ae2b90464f7e01661aff388c699f7f6f.svg",
     "static/media/bars-solid.svg": "/etterem/static/media/bars-solid.cc718c2f150a615fcc53ac0c5f684a49.svg",
     "index.html": "/etterem/index.html",
-    "main.f02be279.css.map": "/etterem/static/css/main.f02be279.css.map",
-    "main.b2018241.js.map": "/etterem/static/js/main.b2018241.js.map",
+    "main.c8b7555d.css.map": "/etterem/static/css/main.c8b7555d.css.map",
+    "main.7d4fdb86.js.map": "/etterem/static/js/main.7d4fdb86.js.map",
     "787.c0bb4d8b.chunk.js.map": "/etterem/static/js/787.c0bb4d8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f02be279.css",
-    "static/js/main.b2018241.js"
+    "static/css/main.c8b7555d.css",
+    "static/js/main.7d4fdb86.js"
   ]
 }
